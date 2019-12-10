@@ -233,7 +233,10 @@
 				4F66DA4A239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift */,
 				4F66DA48239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift */,
 				4F66DA46239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift */,
-				4F66DA3E239F2474008E2BB2 /* CVHomeTests */,
+				4F66DA3F239F24AC008E2BB2 /* CVHomeDataManagerTests.swift */,
+				4F66DA44239F2ACB008E2BB2 /* CVHomeInteractorTests.swift */,
+				4F66DA51239F4440008E2BB2 /* CVHomePresenterTests.swift */,
+				4F66DA4C239F34DB008E2BB2 /* Mocks */,
 				4F407856239B309100E19723 /* Info.plist */,
 			);
 			path = CVAppTests;
@@ -516,17 +519,6 @@
 				4F4078B6239B345800E19723 /* CVEducationProtocols.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		4F66DA3E239F2474008E2BB2 /* CVHomeTests */ = {
-			isa = PBXGroup;
-			children = (
-				4F66DA4C239F34DB008E2BB2 /* Mocks */,
-				4F66DA3F239F24AC008E2BB2 /* CVHomeDataManagerTests.swift */,
-				4F66DA44239F2ACB008E2BB2 /* CVHomeInteractorTests.swift */,
-				4F66DA51239F4440008E2BB2 /* CVHomePresenterTests.swift */,
-			);
-			path = CVHomeTests;
 			sourceTree = "<group>";
 		};
 		4F66DA4C239F34DB008E2BB2 /* Mocks */ = {
