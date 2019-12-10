@@ -10,7 +10,7 @@ import Foundation
 
 class CVWorkExperienceDataManager: CVWorkExperienceDataManagerInputProtocol {
   
-    var interactor: CVWorkExperienceDataManagerOutputProtocol?
+    weak var interactor: CVWorkExperienceDataManagerOutputProtocol?
     
     private var cvWorkExperienceData: CVRemoteDataAPI?
     

@@ -26,12 +26,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-5G-nn2">
-                        <rect key="frame" x="110" y="51" width="284" height="18"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="110" y="49.5" width="284" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.23137254900000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="Ocs-gP-A9k" firstAttribute="leading" secondItem="J6p-Ag-IFd" secondAttribute="leading" constant="20" id="9L0-QX-GUW"/>
                     <constraint firstAttribute="trailing" secondItem="lkD-5G-nn2" secondAttribute="trailing" constant="20" id="B39-bc-H0g"/>

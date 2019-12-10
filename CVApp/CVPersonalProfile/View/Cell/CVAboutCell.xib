@@ -19,13 +19,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="xs3-zS-Z0w">
-                        <rect key="frame" x="20" y="53.5" width="406" height="18"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="20" y="52" width="406" height="20.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.23137254900000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="xs3-zS-Z0w" secondAttribute="trailing" id="6mX-t4-J3L"/>
                     <constraint firstItem="xs3-zS-Z0w" firstAttribute="leading" secondItem="Ihg-vp-cSA" secondAttribute="leadingMargin" id="biy-dl-qve"/>

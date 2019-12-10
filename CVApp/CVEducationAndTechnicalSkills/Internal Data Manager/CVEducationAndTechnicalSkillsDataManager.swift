@@ -10,7 +10,7 @@ import Foundation
 
 class CVEducationDataManager: CVEducationDataManagerInputProtocol {
 
-    var interactor: CVEducationDataManagerOutputProtocol?
+    weak var interactor: CVEducationDataManagerOutputProtocol?
     private var cvEducationData: CVRemoteDataAPI?
     
     func getCVPersonalProfileData() {

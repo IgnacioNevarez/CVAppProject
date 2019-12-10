@@ -27,13 +27,13 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oS-mI-TXc">
                                 <rect key="frame" x="0.0" y="267" width="414" height="595"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-NF-qLH">
                                 <rect key="frame" x="197" y="149" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Coz-NF-qLH" firstAttribute="centerX" secondItem="3b3-Me-hzc" secondAttribute="centerX" id="9IZ-xT-b1K"/>
                             <constraint firstItem="3b3-Me-hzc" firstAttribute="top" secondItem="BmP-qp-yag" secondAttribute="top" constant="15" id="E3i-yr-ZiN"/>
