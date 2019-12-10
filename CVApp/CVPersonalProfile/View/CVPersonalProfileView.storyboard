@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Personal Profile View-->
+        <scene sceneID="sNv-Sf-Sag">
+            <objects>
+                <viewController storyboardIdentifier="cvPersonalProfileView" id="VgY-at-Zpy" customClass="CVPersonalProfileView" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFP-r5-Bc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-Me-hzc">
+                                <rect key="frame" x="107" y="59" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GvO-kw-YGr"/>
+                                    <constraint firstAttribute="height" constant="200" id="IAh-Wk-R4e"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oS-mI-TXc">
+                                <rect key="frame" x="0.0" y="267" width="414" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-NF-qLH">
+                                <rect key="frame" x="197" y="149" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Coz-NF-qLH" firstAttribute="centerX" secondItem="3b3-Me-hzc" secondAttribute="centerX" id="9IZ-xT-b1K"/>
+                            <constraint firstItem="3b3-Me-hzc" firstAttribute="top" secondItem="BmP-qp-yag" secondAttribute="top" constant="15" id="E3i-yr-ZiN"/>
+                            <constraint firstItem="3b3-Me-hzc" firstAttribute="centerX" secondItem="BmP-qp-yag" secondAttribute="centerX" id="MWN-Jq-gxp"/>
+                            <constraint firstItem="Coz-NF-qLH" firstAttribute="centerY" secondItem="3b3-Me-hzc" secondAttribute="centerY" id="Zdl-c6-FR6"/>
+                            <constraint firstItem="7oS-mI-TXc" firstAttribute="leading" secondItem="BmP-qp-yag" secondAttribute="leading" id="a0X-GK-GvW"/>
+                            <constraint firstItem="BmP-qp-yag" firstAttribute="trailing" secondItem="7oS-mI-TXc" secondAttribute="trailing" id="fw7-d9-rPN"/>
+                            <constraint firstItem="7oS-mI-TXc" firstAttribute="top" secondItem="3b3-Me-hzc" secondAttribute="bottom" constant="8" id="ujn-Jq-lOC"/>
+                            <constraint firstItem="BmP-qp-yag" firstAttribute="bottom" secondItem="7oS-mI-TXc" secondAttribute="bottom" id="wKF-AX-8wb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BmP-qp-yag"/>
+                    </view>
+                    <connections>
+                        <outlet property="cvPersonalProfileTableView" destination="7oS-mI-TXc" id="K3z-2h-Gdo"/>
+                        <outlet property="loadingIndicator" destination="Coz-NF-qLH" id="Nmd-P4-8Hn"/>
+                        <outlet property="photoImageView" destination="3b3-Me-hzc" id="Pjm-E0-sa6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJk-jG-tR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3266.666666666667" y="-185.49107142857142"/>
+        </scene>
+    </scenes>
+</document>

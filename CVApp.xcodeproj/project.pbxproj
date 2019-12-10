@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3D5F91239C373B00612E28 /* CVHomeSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5F90239C373B00612E28 /* CVHomeSections.swift */; };
+		4F3D5F99239C8B1100612E28 /* CVInternalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5F98239C8B1100612E28 /* CVInternalDataManager.swift */; };
+		4F3D5FA0239CA19300612E28 /* CVPersonalProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5F9F239CA19300612E28 /* CVPersonalProfileDataManager.swift */; };
+		4F3D5FA3239CA1B400612E28 /* CVWorkExperienceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5FA2239CA1B400612E28 /* CVWorkExperienceDataManager.swift */; };
+		4F3D5FA6239CA1D100612E28 /* CVEducationAndTechnicalSkillsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5FA5239CA1D100612E28 /* CVEducationAndTechnicalSkillsDataManager.swift */; };
+		4F3D5FA9239CB48500612E28 /* CVHomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5FA8239CB48500612E28 /* CVHomeDataManager.swift */; };
+		4F3D5FAD239DAF7A00612E28 /* CVAboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3D5FAC239DAF7A00612E28 /* CVAboutCell.xib */; };
+		4F3D5FAF239DAF9B00612E28 /* CVAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5FAE239DAF9B00612E28 /* CVAboutCell.swift */; };
+		4F3D5FB3239DC3A700612E28 /* CVContactInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D5FB2239DC3A700612E28 /* CVContactInfoCell.swift */; };
+		4F407840239B308E00E19723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40783F239B308E00E19723 /* AppDelegate.swift */; };
+		4F407847239B309100E19723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F407846239B309100E19723 /* Assets.xcassets */; };
+		4F40784A239B309100E19723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F407848239B309100E19723 /* LaunchScreen.storyboard */; };
+		4F40786D239B320900E19723 /* CVHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40786C239B320900E19723 /* CVHomeView.swift */; };
+		4F40786F239B321400E19723 /* CVHomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F40786E239B321400E19723 /* CVHomeView.storyboard */; };
+		4F407871239B322100E19723 /* CVHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407870239B322100E19723 /* CVHomeCell.swift */; };
+		4F407873239B322B00E19723 /* CVHomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407872239B322B00E19723 /* CVHomeProtocols.swift */; };
+		4F407875239B323900E19723 /* CVHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407874239B323900E19723 /* CVHomePresenter.swift */; };
+		4F407877239B324500E19723 /* CVHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407876239B324500E19723 /* CVHomeInteractor.swift */; };
+		4F407879239B324D00E19723 /* CVHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407878239B324D00E19723 /* CVHomeRouter.swift */; };
+		4F407892239B331F00E19723 /* CVPersonalProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407891239B331F00E19723 /* CVPersonalProfileProtocols.swift */; };
+		4F407894239B332D00E19723 /* CVPersonalProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407893239B332D00E19723 /* CVPersonalProfileView.swift */; };
+		4F407896239B333F00E19723 /* CVPersonalProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F407895239B333F00E19723 /* CVPersonalProfileView.storyboard */; };
+		4F407898239B335100E19723 /* CVPersonalProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407897239B335100E19723 /* CVPersonalProfilePresenter.swift */; };
+		4F40789A239B335B00E19723 /* CVPersonalProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F407899239B335B00E19723 /* CVPersonalProfileInteractor.swift */; };
+		4F40789C239B336800E19723 /* CVPersonalProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40789B239B336800E19723 /* CVPersonalProfileRouter.swift */; };
+		4F4078AA239B33F700E19723 /* CVWorkExperienceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078A9239B33F700E19723 /* CVWorkExperienceProtocols.swift */; };
+		4F4078AC239B340200E19723 /* CVWorkExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078AB239B340200E19723 /* CVWorkExperienceView.swift */; };
+		4F4078AE239B340F00E19723 /* CVWorkExperienceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4078AD239B340F00E19723 /* CVWorkExperienceView.storyboard */; };
+		4F4078B0239B341D00E19723 /* CVWorkExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078AF239B341D00E19723 /* CVWorkExperiencePresenter.swift */; };
+		4F4078B2239B342900E19723 /* CVWorkExperienceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078B1239B342900E19723 /* CVWorkExperienceInteractor.swift */; };
+		4F4078B4239B343200E19723 /* CVWorkExperienceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078B3239B343200E19723 /* CVWorkExperienceRouter.swift */; };
+		4F4078B7239B345800E19723 /* CVEducationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078B6239B345800E19723 /* CVEducationProtocols.swift */; };
+		4F4078B9239B347100E19723 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078B8239B347100E19723 /* CVEducationView.swift */; };
+		4F4078BB239B347B00E19723 /* CVEducationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4078BA239B347B00E19723 /* CVEducationView.storyboard */; };
+		4F4078BD239B348900E19723 /* CVEducationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078BC239B348900E19723 /* CVEducationPresenter.swift */; };
+		4F4078BF239B349300E19723 /* CVEducationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078BE239B349300E19723 /* CVEducationInteractor.swift */; };
+		4F4078C1239B349A00E19723 /* CVEducationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078C0239B349A00E19723 /* CVEducationRouter.swift */; };
+		4F4078C3239B34B100E19723 /* CVRemoteDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078C2239B34B100E19723 /* CVRemoteDataAPI.swift */; };
+		4F4078C7239B34C800E19723 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078C6239B34C800E19723 /* UIImageView+Extension.swift */; };
+		4F4078C9239B34D100E19723 /* CVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078C8239B34D100E19723 /* CVConstants.swift */; };
+		4F4078CB239B34DC00E19723 /* CVRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4078CA239B34DC00E19723 /* CVRemoteDataManager.swift */; };
+		4F66DA32239E0AB3008E2BB2 /* CVEducationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F66DA31239E0AB3008E2BB2 /* CVEducationCell.xib */; };
+		4F66DA34239E0ABB008E2BB2 /* CVEducationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA33239E0ABB008E2BB2 /* CVEducationCell.swift */; };
+		4F66DA36239E0ACC008E2BB2 /* CVTechnicalSkillsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA35239E0ACC008E2BB2 /* CVTechnicalSkillsCell.swift */; };
+		4F66DA38239E0AD4008E2BB2 /* CVTechnicalSkillsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F66DA37239E0AD4008E2BB2 /* CVTechnicalSkillsCell.xib */; };
+		4F66DA3A239ED8C0008E2BB2 /* CVWorkExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA39239ED8C0008E2BB2 /* CVWorkExperienceCell.swift */; };
+		4F66DA3C239EDB92008E2BB2 /* CVWorkExperienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F66DA3B239EDB92008E2BB2 /* CVWorkExperienceCell.xib */; };
+		4F66DA40239F24AC008E2BB2 /* CVHomeDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA3F239F24AC008E2BB2 /* CVHomeDataManagerTests.swift */; };
+		4F66DA45239F2ACB008E2BB2 /* CVHomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA44239F2ACB008E2BB2 /* CVHomeInteractorTests.swift */; };
+		4F66DA47239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA46239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift */; };
+		4F66DA49239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA48239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift */; };
+		4F66DA4B239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA4A239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift */; };
+		4F66DA4E239F351A008E2BB2 /* MockCVHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA4D239F351A008E2BB2 /* MockCVHomeRouter.swift */; };
+		4F66DA52239F4440008E2BB2 /* CVHomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA51239F4440008E2BB2 /* CVHomePresenterTests.swift */; };
+		4F66DA54239F4B98008E2BB2 /* MockCVHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA53239F4B98008E2BB2 /* MockCVHomeInteractor.swift */; };
+		4F66DA58239F5201008E2BB2 /* MockCVHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA57239F5201008E2BB2 /* MockCVHomePresenter.swift */; };
+		4F66DA5A239F566C008E2BB2 /* MockCVHomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DA59239F566C008E2BB2 /* MockCVHomeDataManager.swift */; };
+		4FD4FD87239DF2CA00A99174 /* CVContactInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD4FD86239DF2CA00A99174 /* CVContactInfoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F407851239B309100E19723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F407834239B308E00E19723 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F40783B239B308E00E19723;
+			remoteInfo = CVApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F3D5F90239C373B00612E28 /* CVHomeSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeSections.swift; sourceTree = "<group>"; };
+		4F3D5F98239C8B1100612E28 /* CVInternalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVInternalDataManager.swift; sourceTree = "<group>"; };
+		4F3D5F9F239CA19300612E28 /* CVPersonalProfileDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileDataManager.swift; sourceTree = "<group>"; };
+		4F3D5FA2239CA1B400612E28 /* CVWorkExperienceDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceDataManager.swift; sourceTree = "<group>"; };
+		4F3D5FA5239CA1D100612E28 /* CVEducationAndTechnicalSkillsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationAndTechnicalSkillsDataManager.swift; sourceTree = "<group>"; };
+		4F3D5FA8239CB48500612E28 /* CVHomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeDataManager.swift; sourceTree = "<group>"; };
+		4F3D5FAC239DAF7A00612E28 /* CVAboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVAboutCell.xib; sourceTree = "<group>"; };
+		4F3D5FAE239DAF9B00612E28 /* CVAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAboutCell.swift; sourceTree = "<group>"; };
+		4F3D5FB2239DC3A700612E28 /* CVContactInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactInfoCell.swift; sourceTree = "<group>"; };
+		4F40783C239B308E00E19723 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F40783F239B308E00E19723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F407846239B309100E19723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F407849239B309100E19723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F40784B239B309100E19723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F407850239B309100E19723 /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F407856239B309100E19723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F40786C239B320900E19723 /* CVHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeView.swift; sourceTree = "<group>"; };
+		4F40786E239B321400E19723 /* CVHomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVHomeView.storyboard; sourceTree = "<group>"; };
+		4F407870239B322100E19723 /* CVHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeCell.swift; sourceTree = "<group>"; };
+		4F407872239B322B00E19723 /* CVHomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeProtocols.swift; sourceTree = "<group>"; };
+		4F407874239B323900E19723 /* CVHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomePresenter.swift; sourceTree = "<group>"; };
+		4F407876239B324500E19723 /* CVHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeInteractor.swift; sourceTree = "<group>"; };
+		4F407878239B324D00E19723 /* CVHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeRouter.swift; sourceTree = "<group>"; };
+		4F407891239B331F00E19723 /* CVPersonalProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileProtocols.swift; sourceTree = "<group>"; };
+		4F407893239B332D00E19723 /* CVPersonalProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileView.swift; sourceTree = "<group>"; };
+		4F407895239B333F00E19723 /* CVPersonalProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVPersonalProfileView.storyboard; sourceTree = "<group>"; };
+		4F407897239B335100E19723 /* CVPersonalProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfilePresenter.swift; sourceTree = "<group>"; };
+		4F407899239B335B00E19723 /* CVPersonalProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileInteractor.swift; sourceTree = "<group>"; };
+		4F40789B239B336800E19723 /* CVPersonalProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileRouter.swift; sourceTree = "<group>"; };
+		4F4078A9239B33F700E19723 /* CVWorkExperienceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceProtocols.swift; sourceTree = "<group>"; };
+		4F4078AB239B340200E19723 /* CVWorkExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceView.swift; sourceTree = "<group>"; };
+		4F4078AD239B340F00E19723 /* CVWorkExperienceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVWorkExperienceView.storyboard; sourceTree = "<group>"; };
+		4F4078AF239B341D00E19723 /* CVWorkExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperiencePresenter.swift; sourceTree = "<group>"; };
+		4F4078B1239B342900E19723 /* CVWorkExperienceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceInteractor.swift; sourceTree = "<group>"; };
+		4F4078B3239B343200E19723 /* CVWorkExperienceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceRouter.swift; sourceTree = "<group>"; };
+		4F4078B6239B345800E19723 /* CVEducationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationProtocols.swift; sourceTree = "<group>"; };
+		4F4078B8239B347100E19723 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
+		4F4078BA239B347B00E19723 /* CVEducationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVEducationView.storyboard; sourceTree = "<group>"; };
+		4F4078BC239B348900E19723 /* CVEducationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationPresenter.swift; sourceTree = "<group>"; };
+		4F4078BE239B349300E19723 /* CVEducationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationInteractor.swift; sourceTree = "<group>"; };
+		4F4078C0239B349A00E19723 /* CVEducationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationRouter.swift; sourceTree = "<group>"; };
+		4F4078C2239B34B100E19723 /* CVRemoteDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRemoteDataAPI.swift; sourceTree = "<group>"; };
+		4F4078C6239B34C800E19723 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4F4078C8239B34D100E19723 /* CVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVConstants.swift; sourceTree = "<group>"; };
+		4F4078CA239B34DC00E19723 /* CVRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRemoteDataManager.swift; sourceTree = "<group>"; };
+		4F66DA31239E0AB3008E2BB2 /* CVEducationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVEducationCell.xib; sourceTree = "<group>"; };
+		4F66DA33239E0ABB008E2BB2 /* CVEducationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationCell.swift; sourceTree = "<group>"; };
+		4F66DA35239E0ACC008E2BB2 /* CVTechnicalSkillsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTechnicalSkillsCell.swift; sourceTree = "<group>"; };
+		4F66DA37239E0AD4008E2BB2 /* CVTechnicalSkillsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVTechnicalSkillsCell.xib; sourceTree = "<group>"; };
+		4F66DA39239ED8C0008E2BB2 /* CVWorkExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceCell.swift; sourceTree = "<group>"; };
+		4F66DA3B239EDB92008E2BB2 /* CVWorkExperienceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVWorkExperienceCell.xib; sourceTree = "<group>"; };
+		4F66DA3F239F24AC008E2BB2 /* CVHomeDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeDataManagerTests.swift; sourceTree = "<group>"; };
+		4F66DA44239F2ACB008E2BB2 /* CVHomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomeInteractorTests.swift; sourceTree = "<group>"; };
+		4F66DA46239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPersonalProfileDataManagerTests.swift; sourceTree = "<group>"; };
+		4F66DA48239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationAndTechnicalSkillsDataManagerTests.swift; sourceTree = "<group>"; };
+		4F66DA4A239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWorkExperienceDataManagerTests.swift; sourceTree = "<group>"; };
+		4F66DA4D239F351A008E2BB2 /* MockCVHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCVHomeRouter.swift; sourceTree = "<group>"; };
+		4F66DA51239F4440008E2BB2 /* CVHomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHomePresenterTests.swift; sourceTree = "<group>"; };
+		4F66DA53239F4B98008E2BB2 /* MockCVHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCVHomeInteractor.swift; sourceTree = "<group>"; };
+		4F66DA57239F5201008E2BB2 /* MockCVHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCVHomePresenter.swift; sourceTree = "<group>"; };
+		4F66DA59239F566C008E2BB2 /* MockCVHomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCVHomeDataManager.swift; sourceTree = "<group>"; };
+		4FD4FD86239DF2CA00A99174 /* CVContactInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVContactInfoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F407839239B308E00E19723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F40784D239B309100E19723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F3D5F9E239CA17E00612E28 /* Internal Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D5F9F239CA19300612E28 /* CVPersonalProfileDataManager.swift */,
+			);
+			path = "Internal Data Manager";
+			sourceTree = "<group>";
+		};
+		4F3D5FA1239CA1A200612E28 /* Internal Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D5FA2239CA1B400612E28 /* CVWorkExperienceDataManager.swift */,
+			);
+			path = "Internal Data Manager";
+			sourceTree = "<group>";
+		};
+		4F3D5FA4239CA1B800612E28 /* Internal Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D5FA5239CA1D100612E28 /* CVEducationAndTechnicalSkillsDataManager.swift */,
+			);
+			path = "Internal Data Manager";
+			sourceTree = "<group>";
+		};
+		4F3D5FA7239CB46500612E28 /* Internal Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D5FA8239CB48500612E28 /* CVHomeDataManager.swift */,
+			);
+			path = "Internal Data Manager";
+			sourceTree = "<group>";
+		};
+		4F407833239B308E00E19723 = {
+			isa = PBXGroup;
+			children = (
+				4F40783E239B308E00E19723 /* CVApp */,
+				4F407853239B309100E19723 /* CVAppTests */,
+				4F40783D239B308E00E19723 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F40783D239B308E00E19723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F40783C239B308E00E19723 /* CVApp.app */,
+				4F407850239B309100E19723 /* CVAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F40783E239B308E00E19723 /* CVApp */ = {
+			isa = PBXGroup;
+			children = (
+				4F40783F239B308E00E19723 /* AppDelegate.swift */,
+				4F40785F239B318100E19723 /* CVHome */,
+				4F407860239B318700E19723 /* CVPersonalProfile */,
+				4F407863239B31A100E19723 /* CVEducationAndTechnicalSkills */,
+				4F407862239B319800E19723 /* CVWorkExperience */,
+				4F407864239B31AA00E19723 /* Model */,
+				4F407865239B31AE00E19723 /* Common */,
+				4F407846239B309100E19723 /* Assets.xcassets */,
+				4F407848239B309100E19723 /* LaunchScreen.storyboard */,
+				4F40784B239B309100E19723 /* Info.plist */,
+			);
+			path = CVApp;
+			sourceTree = "<group>";
+		};
+		4F407853239B309100E19723 /* CVAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F66DA4A239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift */,
+				4F66DA48239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift */,
+				4F66DA46239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift */,
+				4F66DA3E239F2474008E2BB2 /* CVHomeTests */,
+				4F407856239B309100E19723 /* Info.plist */,
+			);
+			path = CVAppTests;
+			sourceTree = "<group>";
+		};
+		4F40785F239B318100E19723 /* CVHome */ = {
+			isa = PBXGroup;
+			children = (
+				4F40786A239B31F600E19723 /* Protocols */,
+				4F407869239B31F000E19723 /* View */,
+				4F407868239B31EB00E19723 /* Presenter */,
+				4F407867239B31E600E19723 /* Interactor */,
+				4F407866239B31DE00E19723 /* Router */,
+				4F3D5FA7239CB46500612E28 /* Internal Data Manager */,
+			);
+			path = CVHome;
+			sourceTree = "<group>";
+		};
+		4F407860239B318700E19723 /* CVPersonalProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4F40787E239B327D00E19723 /* Protocols */,
+				4F40787D239B326500E19723 /* View */,
+				4F40787C239B326100E19723 /* Presenter */,
+				4F40787B239B325D00E19723 /* Interactor */,
+				4F40787A239B325900E19723 /* Router */,
+				4F3D5F9E239CA17E00612E28 /* Internal Data Manager */,
+			);
+			path = CVPersonalProfile;
+			sourceTree = "<group>";
+		};
+		4F407862239B319800E19723 /* CVWorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				4F407883239B329A00E19723 /* Protocols */,
+				4F407882239B329500E19723 /* View */,
+				4F407881239B329100E19723 /* Presenter */,
+				4F407880239B328D00E19723 /* Interactor */,
+				4F40787F239B328800E19723 /* Router */,
+				4F3D5FA1239CA1A200612E28 /* Internal Data Manager */,
+			);
+			path = CVWorkExperience;
+			sourceTree = "<group>";
+		};
+		4F407863239B31A100E19723 /* CVEducationAndTechnicalSkills */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078B5239B343C00E19723 /* Protocols */,
+				4F40788C239B32D500E19723 /* View */,
+				4F40788B239B32D100E19723 /* Presenter */,
+				4F40788A239B32CC00E19723 /* Interactor */,
+				4F407889239B32C600E19723 /* Router */,
+				4F3D5FA4239CA1B800612E28 /* Internal Data Manager */,
+			);
+			path = CVEducationAndTechnicalSkills;
+			sourceTree = "<group>";
+		};
+		4F407864239B31AA00E19723 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078C2239B34B100E19723 /* CVRemoteDataAPI.swift */,
+				4F3D5F90239C373B00612E28 /* CVHomeSections.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F407865239B31AE00E19723 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078C6239B34C800E19723 /* UIImageView+Extension.swift */,
+				4F4078C8239B34D100E19723 /* CVConstants.swift */,
+				4F4078CA239B34DC00E19723 /* CVRemoteDataManager.swift */,
+				4F3D5F98239C8B1100612E28 /* CVInternalDataManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4F407866239B31DE00E19723 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4F407878239B324D00E19723 /* CVHomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4F407867239B31E600E19723 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4F407876239B324500E19723 /* CVHomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4F407868239B31EB00E19723 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F407874239B323900E19723 /* CVHomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F407869239B31F000E19723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F40786B239B31FC00E19723 /* Cell */,
+				4F40786C239B320900E19723 /* CVHomeView.swift */,
+				4F40786E239B321400E19723 /* CVHomeView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F40786A239B31F600E19723 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4F407872239B322B00E19723 /* CVHomeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4F40786B239B31FC00E19723 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F407870239B322100E19723 /* CVHomeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F40787A239B325900E19723 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4F40789B239B336800E19723 /* CVPersonalProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4F40787B239B325D00E19723 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4F407899239B335B00E19723 /* CVPersonalProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4F40787C239B326100E19723 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F407897239B335100E19723 /* CVPersonalProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F40787D239B326500E19723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F407890239B32EA00E19723 /* Cell */,
+				4F407893239B332D00E19723 /* CVPersonalProfileView.swift */,
+				4F407895239B333F00E19723 /* CVPersonalProfileView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F40787E239B327D00E19723 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4F407891239B331F00E19723 /* CVPersonalProfileProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4F40787F239B328800E19723 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078B3239B343200E19723 /* CVWorkExperienceRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4F407880239B328D00E19723 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078B1239B342900E19723 /* CVWorkExperienceInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4F407881239B329100E19723 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078AF239B341D00E19723 /* CVWorkExperiencePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F407882239B329500E19723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F40788F239B32E600E19723 /* Cell */,
+				4F4078AB239B340200E19723 /* CVWorkExperienceView.swift */,
+				4F4078AD239B340F00E19723 /* CVWorkExperienceView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F407883239B329A00E19723 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078A9239B33F700E19723 /* CVWorkExperienceProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4F407889239B32C600E19723 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078C0239B349A00E19723 /* CVEducationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4F40788A239B32CC00E19723 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078BE239B349300E19723 /* CVEducationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4F40788B239B32D100E19723 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078BC239B348900E19723 /* CVEducationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F40788C239B32D500E19723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F40788D239B32DC00E19723 /* Cell */,
+				4F4078B8239B347100E19723 /* CVEducationView.swift */,
+				4F4078BA239B347B00E19723 /* CVEducationView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F40788D239B32DC00E19723 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F66DA33239E0ABB008E2BB2 /* CVEducationCell.swift */,
+				4F66DA31239E0AB3008E2BB2 /* CVEducationCell.xib */,
+				4F66DA35239E0ACC008E2BB2 /* CVTechnicalSkillsCell.swift */,
+				4F66DA37239E0AD4008E2BB2 /* CVTechnicalSkillsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F40788F239B32E600E19723 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F66DA39239ED8C0008E2BB2 /* CVWorkExperienceCell.swift */,
+				4F66DA3B239EDB92008E2BB2 /* CVWorkExperienceCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F407890239B32EA00E19723 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D5FAC239DAF7A00612E28 /* CVAboutCell.xib */,
+				4F3D5FAE239DAF9B00612E28 /* CVAboutCell.swift */,
+				4F3D5FB2239DC3A700612E28 /* CVContactInfoCell.swift */,
+				4FD4FD86239DF2CA00A99174 /* CVContactInfoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F4078B5239B343C00E19723 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4F4078B6239B345800E19723 /* CVEducationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4F66DA3E239F2474008E2BB2 /* CVHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F66DA4C239F34DB008E2BB2 /* Mocks */,
+				4F66DA3F239F24AC008E2BB2 /* CVHomeDataManagerTests.swift */,
+				4F66DA44239F2ACB008E2BB2 /* CVHomeInteractorTests.swift */,
+				4F66DA51239F4440008E2BB2 /* CVHomePresenterTests.swift */,
+			);
+			path = CVHomeTests;
+			sourceTree = "<group>";
+		};
+		4F66DA4C239F34DB008E2BB2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4F66DA4D239F351A008E2BB2 /* MockCVHomeRouter.swift */,
+				4F66DA53239F4B98008E2BB2 /* MockCVHomeInteractor.swift */,
+				4F66DA57239F5201008E2BB2 /* MockCVHomePresenter.swift */,
+				4F66DA59239F566C008E2BB2 /* MockCVHomeDataManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F40783B239B308E00E19723 /* CVApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F407859239B309100E19723 /* Build configuration list for PBXNativeTarget "CVApp" */;
+			buildPhases = (
+				4F407838239B308E00E19723 /* Sources */,
+				4F407839239B308E00E19723 /* Frameworks */,
+				4F40783A239B308E00E19723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CVApp;
+			productName = CVApp;
+			productReference = 4F40783C239B308E00E19723 /* CVApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F40784F239B309100E19723 /* CVAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F40785C239B309100E19723 /* Build configuration list for PBXNativeTarget "CVAppTests" */;
+			buildPhases = (
+				4F40784C239B309100E19723 /* Sources */,
+				4F40784D239B309100E19723 /* Frameworks */,
+				4F40784E239B309100E19723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F407852239B309100E19723 /* PBXTargetDependency */,
+			);
+			name = CVAppTests;
+			productName = CVAppTests;
+			productReference = 4F407850239B309100E19723 /* CVAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F407834239B308E00E19723 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ignacio Esau Nevarez";
+				TargetAttributes = {
+					4F40783B239B308E00E19723 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4F40784F239B309100E19723 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4F40783B239B308E00E19723;
+					};
+				};
+			};
+			buildConfigurationList = 4F407837239B308E00E19723 /* Build configuration list for PBXProject "CVApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F407833239B308E00E19723;
+			productRefGroup = 4F40783D239B308E00E19723 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F40783B239B308E00E19723 /* CVApp */,
+				4F40784F239B309100E19723 /* CVAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F40783A239B308E00E19723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4078AE239B340F00E19723 /* CVWorkExperienceView.storyboard in Resources */,
+				4F4078BB239B347B00E19723 /* CVEducationView.storyboard in Resources */,
+				4F40784A239B309100E19723 /* LaunchScreen.storyboard in Resources */,
+				4F66DA3C239EDB92008E2BB2 /* CVWorkExperienceCell.xib in Resources */,
+				4F40786F239B321400E19723 /* CVHomeView.storyboard in Resources */,
+				4F407847239B309100E19723 /* Assets.xcassets in Resources */,
+				4F3D5FAD239DAF7A00612E28 /* CVAboutCell.xib in Resources */,
+				4F66DA38239E0AD4008E2BB2 /* CVTechnicalSkillsCell.xib in Resources */,
+				4F66DA32239E0AB3008E2BB2 /* CVEducationCell.xib in Resources */,
+				4F407896239B333F00E19723 /* CVPersonalProfileView.storyboard in Resources */,
+				4FD4FD87239DF2CA00A99174 /* CVContactInfoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F40784E239B309100E19723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F407838239B308E00E19723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4078B9239B347100E19723 /* CVEducationView.swift in Sources */,
+				4F66DA34239E0ABB008E2BB2 /* CVEducationCell.swift in Sources */,
+				4F407892239B331F00E19723 /* CVPersonalProfileProtocols.swift in Sources */,
+				4F4078C9239B34D100E19723 /* CVConstants.swift in Sources */,
+				4F3D5FA6239CA1D100612E28 /* CVEducationAndTechnicalSkillsDataManager.swift in Sources */,
+				4F3D5F91239C373B00612E28 /* CVHomeSections.swift in Sources */,
+				4F407879239B324D00E19723 /* CVHomeRouter.swift in Sources */,
+				4F4078C1239B349A00E19723 /* CVEducationRouter.swift in Sources */,
+				4F66DA36239E0ACC008E2BB2 /* CVTechnicalSkillsCell.swift in Sources */,
+				4F4078BF239B349300E19723 /* CVEducationInteractor.swift in Sources */,
+				4F3D5FA9239CB48500612E28 /* CVHomeDataManager.swift in Sources */,
+				4F3D5FA3239CA1B400612E28 /* CVWorkExperienceDataManager.swift in Sources */,
+				4F3D5F99239C8B1100612E28 /* CVInternalDataManager.swift in Sources */,
+				4F4078BD239B348900E19723 /* CVEducationPresenter.swift in Sources */,
+				4F407871239B322100E19723 /* CVHomeCell.swift in Sources */,
+				4F3D5FAF239DAF9B00612E28 /* CVAboutCell.swift in Sources */,
+				4F4078C3239B34B100E19723 /* CVRemoteDataAPI.swift in Sources */,
+				4F4078B7239B345800E19723 /* CVEducationProtocols.swift in Sources */,
+				4F4078B4239B343200E19723 /* CVWorkExperienceRouter.swift in Sources */,
+				4F4078AA239B33F700E19723 /* CVWorkExperienceProtocols.swift in Sources */,
+				4F3D5FB3239DC3A700612E28 /* CVContactInfoCell.swift in Sources */,
+				4F4078CB239B34DC00E19723 /* CVRemoteDataManager.swift in Sources */,
+				4F407898239B335100E19723 /* CVPersonalProfilePresenter.swift in Sources */,
+				4F407873239B322B00E19723 /* CVHomeProtocols.swift in Sources */,
+				4F4078C7239B34C800E19723 /* UIImageView+Extension.swift in Sources */,
+				4F407877239B324500E19723 /* CVHomeInteractor.swift in Sources */,
+				4F40789A239B335B00E19723 /* CVPersonalProfileInteractor.swift in Sources */,
+				4F66DA3A239ED8C0008E2BB2 /* CVWorkExperienceCell.swift in Sources */,
+				4F40786D239B320900E19723 /* CVHomeView.swift in Sources */,
+				4F407875239B323900E19723 /* CVHomePresenter.swift in Sources */,
+				4F4078B0239B341D00E19723 /* CVWorkExperiencePresenter.swift in Sources */,
+				4F4078AC239B340200E19723 /* CVWorkExperienceView.swift in Sources */,
+				4F3D5FA0239CA19300612E28 /* CVPersonalProfileDataManager.swift in Sources */,
+				4F407840239B308E00E19723 /* AppDelegate.swift in Sources */,
+				4F407894239B332D00E19723 /* CVPersonalProfileView.swift in Sources */,
+				4F4078B2239B342900E19723 /* CVWorkExperienceInteractor.swift in Sources */,
+				4F40789C239B336800E19723 /* CVPersonalProfileRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F40784C239B309100E19723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F66DA47239F2BE0008E2BB2 /* CVPersonalProfileDataManagerTests.swift in Sources */,
+				4F66DA58239F5201008E2BB2 /* MockCVHomePresenter.swift in Sources */,
+				4F66DA5A239F566C008E2BB2 /* MockCVHomeDataManager.swift in Sources */,
+				4F66DA52239F4440008E2BB2 /* CVHomePresenterTests.swift in Sources */,
+				4F66DA40239F24AC008E2BB2 /* CVHomeDataManagerTests.swift in Sources */,
+				4F66DA54239F4B98008E2BB2 /* MockCVHomeInteractor.swift in Sources */,
+				4F66DA4E239F351A008E2BB2 /* MockCVHomeRouter.swift in Sources */,
+				4F66DA49239F2BFF008E2BB2 /* CVEducationAndTechnicalSkillsDataManagerTests.swift in Sources */,
+				4F66DA45239F2ACB008E2BB2 /* CVHomeInteractorTests.swift in Sources */,
+				4F66DA4B239F2C16008E2BB2 /* CVWorkExperienceDataManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F407852239B309100E19723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F40783B239B308E00E19723 /* CVApp */;
+			targetProxy = 4F407851239B309100E19723 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F407848239B309100E19723 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F407849239B309100E19723 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F407857239B309100E19723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F407858239B309100E19723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F40785A239B309100E19723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGCZU3462;
+				INFOPLIST_FILE = CVApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgnacioNevarez.CVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4F40785B239B309100E19723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGCZU3462;
+				INFOPLIST_FILE = CVApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgnacioNevarez.CVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4F40785D239B309100E19723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGCZU3462;
+				INFOPLIST_FILE = CVAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgnacioNevarez.CVAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVApp.app/CVApp";
+			};
+			name = Debug;
+		};
+		4F40785E239B309100E19723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGCZU3462;
+				INFOPLIST_FILE = CVAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgnacioNevarez.CVAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVApp.app/CVApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F407837239B308E00E19723 /* Build configuration list for PBXProject "CVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F407857239B309100E19723 /* Debug */,
+				4F407858239B309100E19723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F407859239B309100E19723 /* Build configuration list for PBXNativeTarget "CVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F40785A239B309100E19723 /* Debug */,
+				4F40785B239B309100E19723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F40785C239B309100E19723 /* Build configuration list for PBXNativeTarget "CVAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F40785D239B309100E19723 /* Debug */,
+				4F40785E239B309100E19723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F407834239B308E00E19723 /* Project object */;
+}
